@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GetLocate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<style>
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.head{
+  position:relative;
+  top:50px;
+  text-align: center;
+}
+.head input{
+  position:relative;
+  top:50px;
+  border-radius:10px;
+  border:1px solid grey;
+}
+.table{
+  position:relative;
+  overflow:auto;
+  top:90px;
+}
+</style>
+<body>
+<div class="head">
+  <h1>Get A Location From An IP</h1>
+  <form>
+    <input type="text" name="target_ip" placeholder="{{userip}}">
+    <input type="submit">
+  </form>
+  <table class="table table-striped table-responsive table-sm">
+
+  <tbody>
+    <tr>
+      <th scope="row">IP</th>
+      <td>{{ip}}</td>
+      <th scope="row">Country Code </th>
+      <td>{{country_code}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Country Name</th>
+      <td>{{country_name}}</td>
+      <th scope="row">Region Code</th>
+      <td>{{region_code}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Region Name</th>
+      <td>{{region_name}}</td>
+      <th scope="row">City</th>
+      <td>{{city}} </td>
+    </tr>
+    <tr>
+      <th scope="row">ZipCode</th>
+      <td>{{zip_code}}</td>
+      <th scope="row">Time Zone</th>
+      <td>{{time_zone}} </td>
+    </tr>
+    <tr>
+      <th scope="row">Latitude</th>
+      <td>{{lat}}</td>
+      <th scope="row">Longitude</th>
+      <td>{{lon}} </td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>
